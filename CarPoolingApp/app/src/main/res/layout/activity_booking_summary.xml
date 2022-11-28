@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".bookingSummary">
 
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Simulate end of ride"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/homeButtonSummary"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/summaryTitle"
         android:layout_width="wrap_content"
