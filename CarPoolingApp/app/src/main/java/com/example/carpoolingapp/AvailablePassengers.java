@@ -32,7 +32,7 @@ public class AvailablePassengers extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
-                intent2 = new Intent(AvailablePassengers.this, bookingConfirmation.class);
+                intent2 = new Intent(AvailablePassengers.this, bookingSummary.class);
                 startActivity(intent2);
             }
         });
