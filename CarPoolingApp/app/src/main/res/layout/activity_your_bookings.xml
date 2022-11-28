@@ -74,6 +74,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginBottom="107dp"
         android:backgroundTint="#4CAF50"
+
         android:text="Simulate Booking is Confirmed by Driver"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/button15"
