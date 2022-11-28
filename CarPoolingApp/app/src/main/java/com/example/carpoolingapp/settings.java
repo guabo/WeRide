@@ -10,6 +10,7 @@ import android.widget.Button;
 public class settings extends AppCompatActivity {
 
     Button homeButton;
+    Button logoutButton;
     Intent intent;
 
     @Override
@@ -18,7 +19,17 @@ public class settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
         homeButton = findViewById(R.id.homeButtonSettings);
+        logoutButton = findViewById(R.id.logoutButton);
+
         homeButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v) {
+                intent = new Intent(settings.this, Booking.class);
+                startActivity(intent);
+            }
+        });
+
+        logoutButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
                 intent = new Intent(settings.this, MainActivity.class);

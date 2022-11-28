@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void forgotPasswordToast()
     {
-        Toast.makeText(this, "Just remember your password, it's not that hard", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "An email has been sent to reset your password", Toast.LENGTH_SHORT).show();
     }
 
 }
