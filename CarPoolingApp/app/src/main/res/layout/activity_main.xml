@@ -72,11 +72,12 @@
         android:id="@+id/button4"
         android:layout_width="205dp"
         android:layout_height="42dp"
+        android:layout_marginStart="152dp"
         android:background="@android:color/transparent"
         android:text="Forgot Password?"
         android:textColor="#3F51B5"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <TextView
         android:id="@+id/textView13"
