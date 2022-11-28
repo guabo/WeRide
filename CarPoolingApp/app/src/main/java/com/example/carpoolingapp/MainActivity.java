@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Intent intent1;
     Intent intent2;
     Button loginButton;
     Button create;
+    Button forgotPassword;
 
 
     @Override
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         loginButton = findViewById(R.id.button2);
         create = findViewById(R.id.button3);
+        forgotPassword = findViewById(R.id.button4);
 
         loginButton.setOnClickListener(new View.OnClickListener()
         {
@@ -36,8 +39,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
+        forgotPassword.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v) {
+                forgotPasswordToast();
+            }
+        });
 
     }
 
+    public void forgotPasswordToast()
+    {
+        Toast.makeText(this, "Just remember your password, it's not that hard", Toast.LENGTH_SHORT).show();
+    }
 
 }
