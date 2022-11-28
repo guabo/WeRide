@@ -79,6 +79,18 @@
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <TextView
+        android:id="@+id/textView13"
+        android:layout_width="47dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="23dp"
+        android:text="or"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
