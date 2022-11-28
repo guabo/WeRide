@@ -14,7 +14,11 @@
         android:theme="@style/Theme.CarPoolingApp"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".settings"
+=======
+            android:name=".YourBookings"
+>>>>>>> 24d8c83a8ad30ac5d8cb6f4a67de6fc60bc242e4
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
