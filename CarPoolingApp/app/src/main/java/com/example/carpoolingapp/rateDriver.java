@@ -25,7 +25,7 @@ public class rateDriver extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
-                intent = new Intent(rateDriver.this, MainActivity.class);
+                intent = new Intent(rateDriver.this, Booking.class);
                 startActivity(intent);
             }
         });

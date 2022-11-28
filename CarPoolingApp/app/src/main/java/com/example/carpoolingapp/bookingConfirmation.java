@@ -21,7 +21,7 @@ public class bookingConfirmation extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
-                intent = new Intent(bookingConfirmation.this, MainActivity.class);
+                intent = new Intent(bookingConfirmation.this, Booking.class);
                 startActivity(intent);
             }
         });

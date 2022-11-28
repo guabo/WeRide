@@ -21,7 +21,7 @@ public class bookingSummary extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
-                intent = new Intent(bookingSummary.this, MainActivity.class);
+                intent = new Intent(bookingSummary.this, Booking.class);
                 startActivity(intent);
             }
         });

@@ -25,7 +25,7 @@ public class ratePassenger extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
-                intent = new Intent(ratePassenger.this, MainActivity.class);
+                intent = new Intent(ratePassenger.this, Booking.class);
                 startActivity(intent);
             }
         });

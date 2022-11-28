@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/homeButtonPassenger"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="67dp"
         android:layout_marginBottom="16dp"
         android:text="Home"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,8 +19,8 @@
 
     <Button
         android:id="@+id/submitButtonPassenger"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="67dp"
         android:layout_marginBottom="16dp"
         android:text="Submit"
         app:layout_constraintBottom_toTopOf="@+id/homeButtonPassenger"
