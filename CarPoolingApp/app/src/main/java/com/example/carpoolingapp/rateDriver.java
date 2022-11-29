@@ -34,6 +34,8 @@ public class rateDriver extends AppCompatActivity {
         {
             public void onClick(View v) {
                 submitButtonToast();
+                intent = new Intent(rateDriver.this, Booking.class);
+                startActivity(intent);
             }
         });
     }

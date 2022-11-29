@@ -6,6 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".bookingSummary">
 
+    <TextView
+        android:id="@+id/bookingText4"
+        android:layout_width="235dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Passenger Name: Darion Pescada"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summaryTitle" />
+
+    <TextView
+        android:id="@+id/bookingText16"
+        android:layout_width="235dp"
+        android:layout_height="20dp"
+        android:text="Passenger Rating: ★★★★"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookingText4" />
+
+    <TextView
+        android:id="@+id/bookingText22"
+        android:layout_width="235dp"
+        android:layout_height="20dp"
+        android:text="Pickup Address: 1234 Example Rd."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookingText16" />
+
+    <TextView
+        android:id="@+id/bookingText28"
+        android:layout_width="235dp"
+        android:layout_height="20dp"
+        android:text="Arrival Address: UBCO Campus"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookingText22" />
+
+    <TextView
+        android:id="@+id/bookingText43"
+        android:layout_width="235dp"
+        android:layout_height="20dp"
+        android:text="Date: Dec. 5, 2022"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookingText28" />
+
+    <TextView
+        android:id="@+id/bookingText44"
+        android:layout_width="235dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Time: 4:30PM"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookingText28" />
+
+    <TextView
+        android:id="@+id/bookingText45"
+        android:layout_width="235dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Payment: $7"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookingText28" />
+
     <Button
         android:id="@+id/mapButton2"
         android:layout_width="150dp"
@@ -34,7 +114,7 @@
         android:id="@+id/summaryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="325dp"
+        android:layout_marginTop="300dp"
         android:text="Summary"
         android:textAlignment="center"
         android:textSize="32sp"
@@ -47,7 +127,7 @@
         android:id="@+id/allSetText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="180dp"
         android:text="You're All Set!"
         android:textAlignment="center"
         android:textSize="32sp"
@@ -55,44 +135,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/locationText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Location: UBCO Campus"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/summaryTitle" />
-
-    <TextView
-        android:id="@+id/dateText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="Date: December 5th, 2022"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/summaryTitle" />
-
-    <TextView
-        android:id="@+id/timeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:text="Time: 4:30PM"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/summaryTitle" />
 
     <TextView
         android:id="@+id/textView18"

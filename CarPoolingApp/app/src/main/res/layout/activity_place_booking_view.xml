@@ -8,15 +8,41 @@
     tools:context=".PlaceBookingView">
 
   <TextView
+      android:id="@+id/textView21"
+      android:layout_width="55dp"
+      android:layout_height="30dp"
+      android:layout_marginTop="16dp"
+      android:text="Time:"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/pickupTime" />
+
+  <EditText
+      android:id="@+id/pickupTime3"
+      android:layout_width="240dp"
+      android:layout_height="42dp"
+      android:ems="10"
+      android:inputType="textShortMessage"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.502"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+  <TextView
       android:id="@+id/placeBookingText1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="228dp"
-      android:text="Where are you going?"
-      android:textSize="24sp"
+      android:layout_marginTop="20dp"
+      android:text="Book a Trip"
+      android:textSize="32sp"
+      android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toBottomOf="@+id/rideMeDriver2" />
 
   <TextView
       android:id="@+id/rideMeDriver2"
@@ -31,63 +57,97 @@
       app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
-      android:id="@+id/placeBookingText3"
-      android:layout_width="191dp"
-      android:layout_height="46dp"
-      android:layout_marginStart="61dp"
-      android:text="Preferred Date and Time"
-      android:textSize="16sp"
+      android:id="@+id/pickupAddressText"
+      android:layout_width="150dp"
+      android:layout_height="30dp"
+      android:layout_marginTop="28dp"
+      android:text="Pickup Address:"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="306dp" />
-
-  <EditText
-      android:id="@+id/editTextDate"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="61dp"
-      android:ems="10"
-      android:inputType="date"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/placeBookingText3" />
+      app:layout_constraintTop_toBottomOf="@+id/placeBookingText1" />
 
   <TextView
-      android:id="@+id/placeBookingText4"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="61dp"
-      android:layout_marginTop="11dp"
-      android:text="Preferred Pick Time Range?"
-      android:textSize="16sp"
+      android:id="@+id/dropoffAddressText"
+      android:layout_width="155dp"
+      android:layout_height="30dp"
+      android:layout_marginTop="16dp"
+      android:text="Arrival Address:"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+      app:layout_constraintTop_toBottomOf="@+id/pickupAddress" />
 
-  <SeekBar
-      android:id="@+id/seekBar"
-      android:layout_width="205dp"
-      android:layout_height="34dp"
-      android:layout_marginStart="61dp"
-      android:layout_marginTop="10dp"
+  <EditText
+      android:id="@+id/pickupAddress"
+      android:layout_width="240dp"
+      android:layout_height="42dp"
+      android:ems="10"
+      android:inputType="textShortMessage"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/placeBookingText4" />
+      app:layout_constraintTop_toBottomOf="@+id/pickupAddressText" />
+
+  <EditText
+      android:id="@+id/dropoffAddress"
+      android:layout_width="240dp"
+      android:layout_height="42dp"
+      android:ems="10"
+      android:inputType="textShortMessage"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/dropoffAddressText" />
 
   <TextView
       android:id="@+id/textView20"
-      android:layout_width="189dp"
-      android:layout_height="31dp"
-      android:layout_marginStart="62dp"
-      android:layout_marginTop="33dp"
-      android:text="Pick Up Location?"
-      android:textSize="16sp"
+      android:layout_width="50dp"
+      android:layout_height="30dp"
+      android:layout_marginTop="16dp"
+      android:text="Date:"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+      app:layout_constraintTop_toBottomOf="@+id/dropoffAddress" />
 
   <EditText
-      android:id="@+id/editTextTextPersonName6"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="61dp"
+      android:id="@+id/pickupTime2"
+      android:layout_width="240dp"
+      android:layout_height="42dp"
       android:ems="10"
-      android:inputType="textPersonName"
+      android:inputType="numberDecimal"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+  <TextView
+      android:id="@+id/textView19"
+      android:layout_width="85dp"
+      android:layout_height="30dp"
+      android:layout_marginTop="16dp"
+      android:text="Payment:"
+      android:textSize="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/pickupTime3" />
+
+  <EditText
+      android:id="@+id/pickupTime"
+      android:layout_width="240dp"
+      android:layout_height="42dp"
+      android:ems="10"
+      android:inputType="textShortMessage"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textView20" />
 

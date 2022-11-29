@@ -34,6 +34,8 @@ public class ratePassenger extends AppCompatActivity {
         {
             public void onClick(View v) {
                 submitButtonToast();
+                intent = new Intent(ratePassenger.this, Booking.class);
+                startActivity(intent);
             }
         });
     }
