@@ -11,8 +11,10 @@ public class bookingSummary extends AppCompatActivity {
 
     Button homeButton;
     Button simulate;
+    Button viewMapButton;
     Intent intent;
     Intent intent2;
+    Intent intent3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,8 @@ public class bookingSummary extends AppCompatActivity {
 
         homeButton = findViewById(R.id.homeButtonSummary);
         simulate = findViewById(R.id.button19);
+        viewMapButton = findViewById(R.id.mapButton2);
+
         homeButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
@@ -34,6 +38,14 @@ public class bookingSummary extends AppCompatActivity {
             public void onClick(View v) {
                 intent2 = new Intent(bookingSummary.this, ratePassenger.class);
                 startActivity(intent2);
+            }
+        });
+
+        viewMapButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v) {
+                intent3 = new Intent(bookingSummary.this, MapsActivity.class);
+                startActivity(intent3);
             }
         });
     }

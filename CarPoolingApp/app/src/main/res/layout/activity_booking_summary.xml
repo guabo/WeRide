@@ -7,26 +7,38 @@
     tools:context=".bookingSummary">
 
     <Button
+        android:id="@+id/mapButton2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:text="View Map"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allSetText" />
+
+    <Button
         android:id="@+id/button19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="35dp"
         android:backgroundTint="#4CAF50"
         android:text="Simulate end of ride"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/homeButtonSummary"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/summaryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="325dp"
         android:text="Summary"
         android:textAlignment="center"
         android:textSize="32sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +47,7 @@
         android:id="@+id/allSetText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="175dp"
+        android:layout_marginTop="150dp"
         android:text="You're All Set!"
         android:textAlignment="center"
         android:textSize="32sp"
@@ -86,19 +98,19 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
         android:layout_marginTop="32dp"
         android:fontFamily="monospace"
         android:text="RideMe"
         android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/homeButtonSummary"
-        android:layout_width="201dp"
-        android:layout_height="67dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
         android:text="Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
