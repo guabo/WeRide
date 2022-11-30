@@ -46,7 +46,7 @@ public class settings extends AppCompatActivity {
             public void onClick(View v) {
                 counter--;
                 if(counter < 0) {
-                    intent = new Intent(settings.this, MainActivity.class);
+                    intent = new Intent(settings.this, CreateAccount.class);
                     startActivity(intent);
                 }
                 else deleteAccountToast();

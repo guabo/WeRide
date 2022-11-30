@@ -16,10 +16,10 @@
       android:textSize="20sp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/pickupTime" />
+      app:layout_constraintTop_toBottomOf="@+id/pickupDate" />
 
   <EditText
-      android:id="@+id/pickupTime3"
+      android:id="@+id/pickupTime"
       android:layout_width="240dp"
       android:layout_height="42dp"
       android:ems="10"
@@ -50,7 +50,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="32dp"
       android:fontFamily="monospace"
-      android:text="RideMe"
+      android:text="WeRide"
       android:textSize="48sp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -117,11 +117,12 @@
       app:layout_constraintTop_toBottomOf="@+id/dropoffAddress" />
 
   <EditText
-      android:id="@+id/pickupTime2"
+      android:id="@+id/payment"
       android:layout_width="240dp"
       android:layout_height="42dp"
       android:ems="10"
       android:inputType="numberDecimal"
+      android:maxLength="4"
       android:textAlignment="center"
       android:textSize="20sp"
       app:layout_constraintEnd_toEndOf="parent"
@@ -137,10 +138,10 @@
       android:textSize="20dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/pickupTime3" />
+      app:layout_constraintTop_toBottomOf="@+id/pickupTime" />
 
   <EditText
-      android:id="@+id/pickupTime"
+      android:id="@+id/pickupDate"
       android:layout_width="240dp"
       android:layout_height="42dp"
       android:ems="10"
